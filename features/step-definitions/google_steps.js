@@ -1,9 +1,11 @@
-const { Given, When, Then, AfterAll} = require('cucumber');
+const { Given, When, Then, AfterAll, After } = require('cucumber');
 const { Builder, By, Capabilities, Key } = require('selenium-webdriver');
 const { expect } = require('chai');
 
 // driver setup
-    let driver = new Builder().forBrowser('chrome').build();
+const capabilities = Capabilities.chrome();
+capabilities.set('chromeOptions', {"w3c":false});
+const driver = new Builder().withCapabilities(capabilities).build();
 
 
 Given('I am on the Google search page', async function () {
@@ -23,5 +25,5 @@ Then('the page title should start with {string}', {timeout: 60 * 1000}, async fu
 });
 
 AfterAll('end', async function(){
-    await driver.quit();
+    await driver.close();
 });

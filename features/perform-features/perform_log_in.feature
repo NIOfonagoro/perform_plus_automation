@@ -1,3 +1,4 @@
+@test
 Feature: title
     In order to test LogIn credential
     As a coach/admin/team manager/team leader/employee
