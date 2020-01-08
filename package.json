@@ -1,0 +1,32 @@
+{
+  "name": "perform_plus_automation",
+  "version": "1.0.0",
+  "description": "Using Selenium with Cucumber for BDD",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NIOfonagoro/perform_plus_automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NIOfonagoro/perform_plus_automation/issues"
+  },
+  "homepage": "https://github.com/NIOfonagoro/perform_plus_automation#readme"
+}
